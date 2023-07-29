@@ -2,7 +2,13 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-data = pd.read_csv("6 class csv.csv")
+
+def load_read_data(filepath):
+    read_data = pd.read_csv(filepath)
+    return read_data
+
+
+data = load_read_data("6 class csv.csv")
 
 # inspect the dataset
 print("First 5 rows:")
